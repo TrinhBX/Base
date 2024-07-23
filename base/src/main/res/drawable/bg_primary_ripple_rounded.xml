@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#32000000"> <!-- this is the ripple color(first touch color changes into this color) -->
+    <item>
+        <selector>
+            <item android:state_enabled="true">
+                <shape android:shape="rectangle">
+                    <!-- default button color -->
+                    <solid android:color="#FF5722"/>
+                    <corners android:radius="32dp"/>
+                </shape>
+            </item>
+            <item>//first item was state enabled so this is automatically state disabled
+                <shape android:shape="rectangle">
+                    <!-- button disabled color opposite behaviour -->
+                    <solid android:color="#40FF5722"/>>
+                    <corners android:radius="32dp"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item>
+        <selector>
+            <item android:state_pressed="true">
+                <shape android:shape="rectangle">
+                    <!-- button first touch of your finger color -->
+                    <solid android:color="#FF5722"/>
+                    <corners android:radius="32dp"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item>
+        <selector>`
+            <item android:state_hovered="true">
+                <shape android:shape="rectangle">
+                    <!-- hovered with a note pencil -->
+                    <solid android:color="#40FF5722"/>
+                    <corners android:radius="32dp"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>
