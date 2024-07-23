@@ -46,5 +46,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    testImplementation(libs.base)
+    implementation(libs.base)
+//    implementation (project(mapOf("path" to ":base")))
 }
